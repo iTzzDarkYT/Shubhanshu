@@ -191,14 +191,15 @@ nav ul li a:hover{
 }
 
 .image{
-    width: 60%;
+    width: 38%;
     height: 70%;
     position: absolute;
     bottom: 10px;
-    right:140px;
+    right:10px;
 }
 
 .image img{
+    margin-left: -300px;
     height:100%;
     position: absolute;
     left: 50%;
