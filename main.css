@@ -113,7 +113,7 @@ nav .nav-list li.btn:hover a{
 }
 
 .container{
-    padding-top: 170px;
+    padding-top: 160px;
 }
 
 .container .hero-text{
@@ -166,6 +166,13 @@ span{
     transform: scale(1.1);
     background: #2ecc71;
     transition: 0.4s;
+}
+
+#icon{
+    width: 70px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-bottom: -33px;
 }
 
 .container .hero-text button{

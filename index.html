@@ -46,6 +46,7 @@
                         <a href="https://www.linkedin.com/in/shubhanshu-maurya-45a561239/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         <a href="https://www.youtube.com/@thepseudoirony9527" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
                         <a href="https://www.instagram.com/shubh.shubh22/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <img src="Images/play.png" id="icon">
                     </div>
                     <a href="About.html" target="_blank"><button type="button">More About Me</button></a>
                     <a href="Contacts.html" target="_blank"><button type="button">Contact Me</button></a>
@@ -55,6 +56,9 @@
                 </div>
             </div>
         </div>
+        <audio id="mySong" loop>
+            <source src="sound/familiar.mp3" type="audio/mp3">
+        </audio>
     </section>
 
     <!-- <script type="text/javascript" src="shh.js"></script> -->
@@ -67,6 +71,19 @@
             backSpeed: 60
         })
     </script>
+    <script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
 
+        icon.onclick = function(){
+            if(mySong.paused){
+                mySong.play();
+                icon.src = "Images/pause.png";
+            }else{
+                mySong.pause();
+                icon.src = "Images/play.png";
+            }
+        }
+    </script>
 </body>
 </html>
